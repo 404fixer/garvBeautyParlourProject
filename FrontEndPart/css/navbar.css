@@ -30,5 +30,11 @@ html {
 }
 
 #mainNav .navbar-brand:hover {
-    color: rgb(250, 150, 167);
+    color: rgb(251, 118, 140);
+}
+
+#togglerBtn {
+    color: rgba(255, 255, 255, 0.815);
+    font-size: 2rem;
+    outline: none;
 }
