@@ -70,3 +70,49 @@ header {
     height: 100vh;
     object-fit: cover;
 }
+
+
+/* ABOUT SECTION STYLING */
+
+.aboutSection #cardAbout {
+    text-align: center;
+    padding: 2rem;
+}
+
+.aboutSection #cardAbout:nth-of-type(2) {
+    border-left: 1px solid rgb(177, 177, 177);
+    border-right: 1px solid rgb(177, 177, 177);
+}
+
+.aboutSection #image-person img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.aboutSection #heading {
+    text-align: center;
+}
+
+.aboutSection #content {
+    text-align: justify;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.aboutSection #personName {
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.aboutSection #personDetail {
+    font-size: 1rem;
+}
+
+@media (max-width: 765px) {
+    .aboutSection #cardAbout:nth-of-type(2) {
+        border: none;
+        border-top: 1px solid rgb(177, 177, 177);
+        border-bottom: 1px solid rgb(177, 177, 177);
+    }
+}
