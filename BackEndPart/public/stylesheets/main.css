@@ -1,118 +1,164 @@
-body,
-html {
-    font-family: 'Nunito Sans', sans-serif;
-    height: 100%;
-}
-
-
-/* Navbar Scrolling Effect */
-
-.nav-area {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    transition: top .6s;
-    overflow: hidden;
-}
-
-.nav-area.animate {
-    top: -71px;
-}
-
-.nav-area.sticky {
-    top: 0;
-}
-
-header {
-    z-index: 1;
-}
-
-#mainNav.navbar {
-    background-color: rgba(0, 0, 0, 0.431);
-}
-
-#mainNav .navbar-brand {
-    color: rgb(251, 175, 188);
-    font-size: 1.8rem;
-    font-weight: 200;
-}
-
-#mainNav #navBody .nav-link {
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 200;
-    height: 100%;
-}
-
-#mainNav #navBody .nav-link:hover {
-    background-color: rgba(0, 0, 0, 0.63);
-}
-
-#mainNav .navbar-brand:hover {
-    color: rgb(251, 118, 140);
-}
-
-#togglerBtn {
-    color: rgba(255, 255, 255, 0.815);
-    font-size: 2rem;
-    outline: none;
-}
-
-
-/* carousel styles */
-
-#carouselContainer {
-    padding: 0;
-}
-
-#carouselContainer .carousel-inner .carousel-item img {
-    height: 100vh;
-    object-fit: cover;
-}
-
-
-/* ABOUT SECTION STYLING */
-
-.aboutSection #cardAbout {
-    text-align: center;
-    padding: 2rem;
-}
-
-.aboutSection #cardAbout:nth-of-type(2) {
-    border-left: 1px solid rgb(177, 177, 177);
-    border-right: 1px solid rgb(177, 177, 177);
-}
-
-.aboutSection #image-person img {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-}
-
-.aboutSection #heading {
-    text-align: center;
-}
-
-.aboutSection #content {
-    text-align: justify;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-.aboutSection #personName {
-    font-weight: 400;
-    font-size: 1.8rem;
-}
-
-.aboutSection #personDetail {
-    font-size: 1rem;
-}
-
-@media (max-width: 765px) {
-    .aboutSection #cardAbout:nth-of-type(2) {
-        border: none;
-        border-top: 1px solid rgb(177, 177, 177);
-        border-bottom: 1px solid rgb(177, 177, 177);
+    body,
+    html {
+        font-family: 'Nunito Sans', sans-serif;
+        height: 100%;
     }
-}
+    
+    header {
+        z-index: 1;
+    }
+    
+    #mainNav {
+        background-color: rgba(0, 0, 0, 0.431);
+        min-height: 150px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 55%, 0 100%);
+        padding-bottom: 2.5rem;
+    }
+    
+    header #mainNav #navbarBrand {
+        color: rgb(251, 175, 188);
+        font-weight: 200;
+        font-family: 'Dancing Script', cursive;
+        font-weight: 400;
+        font-size: 2.5rem;
+        transition: all 0.5s ease;
+    }
+    
+    header #mainNav #navbarBrand i {
+        font-size: 4rem;
+        margin-top: 1.6rem;
+    }
+    
+    #mainNav #navBody .nav-link {
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 200;
+        height: 100%;
+        transition: all 0.5s ease;
+        margin-right: 0.8rem;
+    }
+    
+    #mainNav #navBody .nav-link:hover {
+        border: 1.5px solid rgb(250, 74, 103);
+        color: rgb(250, 74, 103);
+    }
+    
+    #mainNav #navbarBrand:hover {
+        color: rgb(250, 74, 103);
+    }
+    
+    #togglerBtn {
+        color: rgba(255, 255, 255, 0.815);
+        font-size: 2rem;
+        outline: none;
+    }
+    
+    @media (max-width: 576px) {
+        #mainNav {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 35% 80%, 0 100%);
+            padding-bottom: 3rem;
+        }
+        #mainNav ul li {
+            padding-left: 60%;
+        }
+        #mainNav #navbarBrand {
+            margin-left: 1rem !important;
+        }
+        #mainNav #navBody .nav-link:hover {
+            border: none;
+            color: rgb(250, 74, 103);
+        }
+    }
+    
+    @media (max-width: 360px) {
+        #mainNav {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 35% 85%, 0 100%);
+            padding-bottom: 2rem;
+        }
+        #mainNav ul li {
+            padding-left: 50%;
+        }
+        #mainNav #navbarBrand {
+            margin-left: 0.7rem !important;
+        }
+    }
+    /* Navbar Scrolling Effect */
+    
+    .nav-area {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        transition: top .6s;
+        overflow: hidden;
+    }
+    
+    .nav-area.animate {
+        top: -71px;
+    }
+    
+    .nav-area.sticky {
+        top: 0;
+    }
+    /* carousel styles */
+    
+    #carouselContainer {
+        padding: 0;
+    }
+    
+    #carouselContainer .carousel-inner .carousel-item img {
+        height: 100vh;
+        object-fit: cover;
+    }
+    
+    #carouselContainer #carouselBtn {
+        z-index: 0;
+    }
+    
+    #carouselContainer #carouselBtn:hover {
+        background-color: rgba(0, 0, 0, 0.63);
+    }
+    /* ABOUT SECTION STYLING */
+    
+    .aboutSection #cardAbout {
+        text-align: center;
+        padding: 2rem;
+    }
+    
+    .aboutSection #cardAbout:nth-of-type(2) {
+        border-left: 1px solid rgb(177, 177, 177);
+        border-right: 1px solid rgb(177, 177, 177);
+    }
+    
+    .aboutSection #image-person img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+    }
+    
+    .aboutSection #heading {
+        text-align: center;
+    }
+    
+    .aboutSection #content {
+        text-align: justify;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    .aboutSection #personName {
+        font-weight: 400;
+        font-size: 1.8rem;
+    }
+    
+    .aboutSection #personDetail {
+        font-size: 1rem;
+    }
+    
+    @media (max-width: 765px) {
+        .aboutSection #cardAbout:nth-of-type(2) {
+            border: none;
+            border-top: 1px solid rgb(177, 177, 177);
+            border-bottom: 1px solid rgb(177, 177, 177);
+        }
+    }
