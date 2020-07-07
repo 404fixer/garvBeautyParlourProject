@@ -1,15 +1,13 @@
 body,
 html {
     font-family: 'Nunito Sans', sans-serif;
-    background: url('https://images.unsplash.com/photo-1485178575877-1a13bf489dfe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=991&q=80');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     height: 100%;
 }
 
-/* edit by garv */
-.nav-area{
+
+/* Navbar Scrolling Effect */
+
+.nav-area {
     position: fixed;
     top: 0px;
     left: 0px;
@@ -18,13 +16,17 @@ html {
     overflow: hidden;
 }
 
-.nav-area.animate{
-    top:-71px;
+.nav-area.animate {
+    top: -71px;
 }
-.nav-area.sticky{
+
+.nav-area.sticky {
     top: 0;
 }
-/* upto hear */
+
+header {
+    z-index: 1;
+}
 
 #mainNav.navbar {
     background-color: rgba(0, 0, 0, 0.431);
@@ -55,4 +57,16 @@ html {
     color: rgba(255, 255, 255, 0.815);
     font-size: 2rem;
     outline: none;
+}
+
+
+/* carousel styles */
+
+#carouselContainer {
+    padding: 0;
+}
+
+#carouselContainer .carousel-inner .carousel-item img {
+    height: 100vh;
+    object-fit: cover;
 }
