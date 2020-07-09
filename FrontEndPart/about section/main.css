@@ -1,0 +1,38 @@
+body {
+    background-color: aliceblue;
+}
+
+.aboutSection #cardAbout {
+    text-align: center;
+    padding: 2rem;
+}
+
+.aboutSection #cardAbout:nth-of-type(2) {
+    border-left: 1px solid rgb(160, 160, 160);
+    border-right: 1px solid rgb(87, 87, 87);
+}
+
+.aboutSection #image-person img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.aboutSection #heading {
+    text-align: end;
+}
+
+.aboutSection #content {
+    text-align: justify;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.aboutSection #personName {
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.aboutSection #personDetail {
+    font-size: 1rem;
+}
