@@ -94,7 +94,7 @@
     }
     
     .nav-area.animate {
-        top: -71px;
+        top: -158px;
     }
     
     .nav-area.sticky {
@@ -161,4 +161,22 @@
             border-top: 1px solid rgb(177, 177, 177);
             border-bottom: 1px solid rgb(177, 177, 177);
         }
+    }
+    /* css for appointmrnt */
+    .appointment #heading {
+        text-align: center;
+    }
+    .submitbtn{
+        overflow: hidden;
+    }
+    .appointment .submit-btn{
+        float: right;
+    }
+
+    .footer{
+        background-color: rgb(233, 232, 231);
+    }
+
+    .contactus #heading{
+        text-align: center;
     }
