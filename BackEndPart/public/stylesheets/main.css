@@ -94,7 +94,7 @@
     }
     
     .nav-area.animate {
-        top: -71px;
+        top: -158px;
     }
     
     .nav-area.sticky {
@@ -162,6 +162,24 @@
             border-bottom: 1px solid rgb(177, 177, 177);
         }
     }
+
+    /* css for appointment */
+    .appointment #heading {
+        text-align: center;
+    }
+    .submitbtn{
+        overflow: hidden;
+    }
+    .appointment .submit-btn{
+        float: right;
+    }
+
+    .footer{
+        background-color: rgb(233, 232, 231);
+    }
+
+    .contactus #heading{
+      text-align: center;}
     /* SERVICE SECTION STYLES */
     
     .serviceSection {
