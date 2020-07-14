@@ -182,10 +182,7 @@
     
     .footer {
         background-color: rgb(233, 232, 231);
-    }
-    
-    .contactus #heading {
-        text-align: center;
+        margin-top: 10rem;
     }
     /* SERVICE SECTION STYLES */
     
@@ -304,4 +301,47 @@
     
     .gallerySection #moreBtn a:hover {
         color: rgb(250, 74, 103);
+    }
+    /* CONTACT US STYLES */
+    
+    .contactUs {
+        margin-top: 3rem;
+    }
+    
+    .contactUs .headings {
+        text-align: center;
+    }
+    
+    .contactUs #contactCols {
+        margin-top: 1rem;
+    }
+    
+    .contactUs #contactCols:nth-of-type(2) {
+        border-left: 1px solid rgb(177, 177, 177);
+        padding-top: 1rem;
+    }
+    
+    .contactUs #contactCols #googleMap {
+        margin-bottom: 1rem;
+    }
+    
+    .contactUs #contactCols #detailsIcon i {
+        font-size: 4.5rem;
+        color: rgb(56, 56, 56);
+    }
+    
+    .contactUs #contactCols #detailsIcon {
+        padding-right: 0;
+        padding-left: 1.4rem;
+        text-align: center;
+    }
+    
+    .contactUs #contactCols #detailsInfo {
+        margin: auto 0;
+    }
+    
+    .contactUs #contactCols p {
+        margin-bottom: 0.7rem;
+        font-size: 1rem;
+        border-bottom: 1px solid rgb(177, 177, 177);
     }

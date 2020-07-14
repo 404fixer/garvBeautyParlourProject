@@ -11,37 +11,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/stylesheets/main.css" />
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="/stylesheets/galleryPage.css">
+
     <script>
         console.log('hlo')
-        //jquery for refreshing page at same place on form submission
-$('#submit-btn').click(function(e) {
-    console.log("working")
-    e.preventDefault();
-    $.ajax({
-        global: false,
-        type: 'POST',
-        url: '/send', // missing quotes  
-        dataType: 'html',
-        data: {
-            name: $("#name").val(),
-            email: $("#email").val(),
-            address: $("#address").val(),
-            mobile: $("#mobile").val(),
-            date: $("#date").val(),
-            branch: $("#branch").val(),
-            enquiry: $("#enquiry").val()
-        },
-        success: function (result) {
-            console.log(result);
-        },
-        error: function (request, status, error) {
-            serviceError();
-        }
-    });
-});
+            //jquery for refreshing page at same place on form submission
+        $('#submit-btn').click(function(e) {
+            console.log("working")
+            e.preventDefault();
+            $.ajax({
+                global: false,
+                type: 'POST',
+                url: '/send', // missing quotes  
+                dataType: 'html',
+                data: {
+                    name: $("#name").val(),
+                    email: $("#email").val(),
+                    address: $("#address").val(),
+                    mobile: $("#mobile").val(),
+                    date: $("#date").val(),
+                    branch: $("#branch").val(),
+                    enquiry: $("#enquiry").val()
+                },
+                success: function(result) {
+                    console.log(result);
+                },
+                error: function(request, status, error) {
+                    serviceError();
+                }
+            });
+        });
     </script>
-    <link rel="stylesheet" href="/stylesheets/galleryPage.css">
 </head>
 
 <body>
