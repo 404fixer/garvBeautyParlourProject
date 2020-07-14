@@ -1,0 +1,71 @@
+#serviceBtn {
+    background-color: rgb(251, 175, 188);
+    border-radius: 0;
+    border: none;
+    color: black;
+    /* border: 1px solid rgb(250, 74, 103); */
+}
+
+#serviceBtn:hover {
+    border: 1px solid rgb(250, 74, 103);
+    background-color: transparent;
+    color: rgb(250, 74, 103);
+}
+
+#headingService {
+    text-align: center;
+}
+
+.serviceSection .card-body {
+    text-align: center;
+}
+
+.serviceSection .card {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#serviceCardHidden {
+    /* position: fixed;
+    z-index: 111;
+    width: 100%;
+    height: 100%;
+    background-color: white; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    padding-top: 5rem;
+    transform: translateX(-100%);
+    transition: all .5s ease-in-out;
+}
+
+.open {
+    transform: translateX(0) !important;
+}
+
+.serviceSection #serviceCardHidden #serviceCardHiddenHeading {
+    text-align: end;
+}
+
+.serviceSection #serviceCardHidden #section-1 img {
+    width: 100%;
+}
+
+.serviceSection #serviceCardHidden hr {
+    margin-bottom: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.serviceSection #serviceCardHidden #section-2 {
+    text-align: center;
+}
+
+.serviceSection #serviceCardHidden #section-2 #tableHeading {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}

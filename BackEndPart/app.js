@@ -8,6 +8,10 @@ app.get('/', (req, res) => {
     res.render('index')
 })
 
+app.get('/gallery', (req, res) => {
+    res.render('galleryPage')
+})
+
 app.listen('3000', () => {
     console.log('SERVER HAS STARTED')
 })
