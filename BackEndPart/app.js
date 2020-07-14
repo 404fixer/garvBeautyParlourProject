@@ -122,6 +122,10 @@ app.post('/send', (req, res) => {
   }
 });
 
+app.get('/gallery', (req, res) => {
+    res.render('galleryPage')
+})
+
 app.listen('3000', () => {
   console.log('SERVER HAS STARTED')
 })
