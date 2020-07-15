@@ -9,39 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="/stylesheets/main.css" />
     <link rel="stylesheet" href="/stylesheets/galleryPage.css">
-
-    <script>
-        console.log('hlo')
-            //jquery for refreshing page at same place on form submission
-        $('#submit-btn').click(function(e) {
-            console.log("working")
-            e.preventDefault();
-            $.ajax({
-                global: false,
-                type: 'POST',
-                url: '/send', // missing quotes  
-                dataType: 'html',
-                data: {
-                    name: $("#name").val(),
-                    email: $("#email").val(),
-                    address: $("#address").val(),
-                    mobile: $("#mobile").val(),
-                    date: $("#date").val(),
-                    branch: $("#branch").val(),
-                    enquiry: $("#enquiry").val()
-                },
-                success: function(result) {
-                    console.log(result);
-                },
-                error: function(request, status, error) {
-                    serviceError();
-                }
-            });
-        });
-    </script>
 </head>
 
 <body>
