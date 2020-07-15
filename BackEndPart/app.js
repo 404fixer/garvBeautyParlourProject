@@ -68,14 +68,14 @@ app.post('/send', (req, res) => {
       intro: 'Empty fields! ',
       message: 'Please fill all the details.'
     }
-    res.redirect('/')
+    res.redirect('/#appointment-id')
   }else if(req.body.mobile.length!=10 || req.body.mobile[0]<6){
     req.session.message = {
       type: 'danger',
       intro: 'invalid phone ',
       message: 'Please fill valid mobile number.'
     }
-    res.redirect('/')
+    res.redirect('/#appointment-id')
   }
   else {
     transporter.sendMail(emailOptions1, (error, info) => {
@@ -87,7 +87,7 @@ app.post('/send', (req, res) => {
           intro: 'can not send mail ',
           message: 'Please enter valid email.'
         }
-        res.redirect('/');
+        res.redirect('/#appointment-id');
       } else {
         console.log('Message Sent: ' + info.response);
         console.log('Email Message: ' + emailMessage);
@@ -103,7 +103,7 @@ app.post('/send', (req, res) => {
           intro: 'can not send mail ',
           message: 'email of host is not correct.'
         }
-        res.redirect('/');
+        res.redirect('/#appointment-id');
       } else {
         console.log('Message Sent: ' + info.response);
         console.log('Email Message: ' + emailMessage);
@@ -118,7 +118,7 @@ app.post('/send', (req, res) => {
 
     console.log(req.body.name, req.body.email, req.body.enquiry)
     console.log("hlo world");
-    res.redirect('/')
+    res.redirect('/#appointment-id')
   }
 });
 

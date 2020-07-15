@@ -31,38 +31,38 @@ for (let i = 0; i < serviceBtn.length; i++) {
     //     serviceCardHidden[i].classList.remove('open')
     // })
 }
-console.log('hlo')
-//jquery for refreshing page at same place on form submission
-var frm = $('#contactForm1');
+// console.log('hlo')
+// //jquery for refreshing page at same place on form submission
+// var frm = $('#contactForm1');
 
-frm.submit(function (e) {
+// frm.submit(function (e) {
 
-    e.preventDefault();
+//     e.preventDefault();
 
-    $.ajax({
-        type: frm.attr('method'),
-        url: frm.attr('action'),
-        data: frm.serialize(),
-        success: function (data) {
-            console.log('Submission was successful.');
-            formdata: {
-                name: $("#name").val();
-                email: $("#email").val();
-                address: $("#address").val();
-                mobile: $("#mobile").val();
-                date: $("#date").val();
-                branch: $("#branch").val();
-                enquiry: $("#enquiry").val();
-            }
-            
-            // console.log(data);
-        },
-        error: function (data) {
-            console.log('An error occurred.');
-            // console.log(data);
-        },
-    });
-});
+//     $.ajax({
+//         type: frm.attr('method'),
+//         url: frm.attr('action'),
+//         data: frm.serialize(),
+//         success: function (data) {
+//             console.log('Submission was successful.');
+//             formdata: {
+//                 name: $("#name").val();
+//                 email: $("#email").val();
+//                 address: $("#address").val();
+//                 mobile: $("#mobile").val();
+//                 date: $("#date").val();
+//                 branch: $("#branch").val();
+//                 enquiry: $("#enquiry").val();
+//             }
+
+//             // console.log(data);
+//         },
+//         error: function (data) {
+//             console.log('An error occurred.');
+//             // console.log(data);
+//         },
+//     });
+// });
 // $('#submit-btn').click(function(e) {
 //     console.log("working")
 //     e.preventDefault();
