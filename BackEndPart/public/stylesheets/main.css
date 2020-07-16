@@ -226,46 +226,33 @@ header #mainNav #navbarBrand i {
 }
 
 #serviceCardHidden {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1001;
     background-color: white;
-    width: 100%;
-    height: 100%;
-    padding: 2rem;
-    padding-top: 5rem;
-    transform: translateX(-100%);
-    transition: all .5s ease-in-out;
+    padding-bottom: 5rem;
 }
 
-.open {
-    transform: translateX(0) !important;
-}
-
-.serviceSection #serviceCardHidden #serviceCardHiddenHeading {
+#serviceCardHidden #serviceCardHiddenHeading {
     text-align: end;
     font-weight: 300;
     text-transform: uppercase;
     color: rgb(143, 142, 142);
 }
 
-.serviceSection #serviceCardHidden #section-1 img {
+#serviceCardHidden #section-1 img {
     width: 100%;
     margin-bottom: 1.5rem;
 }
 
-.serviceSection #serviceCardHidden hr {
+#serviceCardHidden hr {
     margin-bottom: 2.5rem;
     margin-top: 1.5rem;
 }
 
-.serviceSection #serviceCardHidden #section-2 {
+#serviceCardHidden #section-2 {
     text-align: center;
     font-size: 1.1rem;
 }
 
-.serviceSection #serviceCardHidden #section-2 #tableHeading {
+#serviceCardHidden #section-2 #tableHeading {
     text-transform: uppercase;
     margin-bottom: 1rem;
     font-size: 1.3rem;
