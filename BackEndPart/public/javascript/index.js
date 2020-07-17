@@ -1,6 +1,7 @@
 $(function () {
     var scroll = $(document).scrollTop()
     var navheight = $('.nav-area').outerHeight()
+    var i = 0;
     $(window).scroll(function () {
         var scrolled = $(document).scrollTop()
 
@@ -12,8 +13,14 @@ $(function () {
 
         if (scrolled > scroll) {
             $('.nav-area').removeClass('sticky')
+            i = 0;
+            console.log(i);
         } else {
-            $('.nav-area').addClass('sticky')
+            i = i + scroll - scrolled;
+            console.log(i);
+            if (i > 500) {
+                $('.nav-area').addClass('sticky')
+            }
         }
         scroll = $(document).scrollTop()
     })
