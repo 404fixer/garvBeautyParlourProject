@@ -258,6 +258,13 @@ header #mainNav #navbarBrand i {
     font-size: 1.3rem;
 }
 
+#serviceCardHidden a{
+    color: black;
+}
+
+#serviceCardHidden a:hover{
+    color: red;
+}
 
 /* GALLERY SECTION STYLES */
 
