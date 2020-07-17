@@ -2,7 +2,7 @@ body,
 html {
     font-family: 'Nunito Sans', sans-serif;
     height: 100%;
-    background-color: #D5D8DC;
+    background-color: lightgray;
     scroll-behavior: smooth;
 }
 
@@ -172,25 +172,6 @@ header #mainNav #navbarBrand i {
 }
 
 
-/* css for appointment */
-
-.appointment {
-    margin-top: 3rem;
-}
-
-.appointment #heading {
-    text-align: center;
-}
-
-.submitbtn {
-    overflow: hidden;
-}
-
-.appointment .submit-btn {
-    float: right;
-}
-
-
 /* SERVICE SECTION STYLES */
 
 .serviceSection {
@@ -298,6 +279,43 @@ header #mainNav #navbarBrand i {
 
 .gallerySection #moreBtn a:hover {
     color: rgb(250, 74, 103);
+}
+
+
+/* APPOINTMENT SECTION STYLES */
+
+.appointment {
+    margin-top: 3rem;
+}
+
+.appointment #heading {
+    text-align: center;
+}
+
+.submitBtn {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.appointment #submit-btn {
+    background-color: transparent;
+    border: 2.5px solid rgb(250, 74, 103);
+    box-shadow: none;
+    color: rgb(250, 74, 103);
+    border-radius: 0;
+    font-size: 1.5rem;
+    padding: 0.6rem;
+    width: 10rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.appointment #submit-btn:hover {
+    background-color: rgb(251, 175, 188);
+    border: none;
+    color: rgb(56, 56, 56);
+    box-shadow: 2px 1px 1px rgba(88, 88, 88, 0.472);
 }
 
 
