@@ -14,10 +14,8 @@ $(function () {
         if (scrolled > scroll) {
             $('.nav-area').removeClass('sticky')
             i = 0;
-            console.log(i);
         } else {
             i = i + scroll - scrolled;
-            console.log(i);
             if (i > 400) {
                 $('.nav-area').addClass('sticky')
             }
