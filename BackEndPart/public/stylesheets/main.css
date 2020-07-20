@@ -2,7 +2,6 @@ body,
 html {
     font-family: 'Nunito Sans', sans-serif;
     height: 100%;
-    background-color: lightgray;
     scroll-behavior: smooth;
 }
 
@@ -128,46 +127,93 @@ header #mainNav #navbarBrand i {
 
 /* ABOUT SECTION STYLING */
 
-.aboutSection #cardAbout {
-    text-align: center;
-    padding: 2rem;
+.aboutSection {
+    margin-top: 2rem;
+    padding-top: 2rem;
 }
 
-.aboutSection #cardAbout:nth-of-type(2) {
-    border-left: 1px solid rgb(177, 177, 177);
-    border-right: 1px solid rgb(177, 177, 177);
+.aboutSection:hover #heading {
+    transform: rotateY(360deg);
 }
 
 .aboutSection #image-person img {
     width: 180px;
     height: 180px;
     object-fit: cover;
+    transition: all 0.5s ease;
 }
 
 .aboutSection #heading {
+    font-family: 'Cinzel', serif;
+    color: #2B2B2B;
+    font-size: 4rem;
+    transition: all 2s ease;
+}
+
+.aboutSection #aboutCard {
+    background-color: #DADADA;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.aboutSection #cardAbout {
     text-align: center;
+    padding: 2rem;
+}
+
+.aboutSection #cardAbout:hover,
+.aboutSection #cardAbout:hover #image-person img {
+    -webkit-box-shadow: -2px -2px 8px -1px rgba(36, 36, 36, 0.23);
+    -moz-box-shadow: -2px -2px 8px -1px rgba(36, 36, 36, 0.23);
+    box-shadow: -2px -2px 8px -1px rgba(36, 36, 36, 0.23);
 }
 
 .aboutSection #content {
+    letter-spacing: 0.4px;
+    line-height: 1.6;
     text-align: justify;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    max-width: 70%;
+    padding-left: 17%;
+    color: #7F7F80;
 }
 
 .aboutSection #personName {
-    font-weight: 400;
-    font-size: 1.8rem;
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    margin-bottom: 0;
+    color: #7F7F80;
 }
 
 .aboutSection #personDetail {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 2.2rem;
+    color: #3F3F3F;
 }
 
-@media (max-width: 765px) {
-    .aboutSection #cardAbout:nth-of-type(2) {
-        border: none;
-        border-top: 1px solid rgb(177, 177, 177);
-        border-bottom: 1px solid rgb(177, 177, 177);
+.aboutSection #designation {
+    margin-top: 0.4rem;
+    font-size: 0.8rem;
+    color: #7F7F80;
+}
+
+@media (max-width: 1000px) {
+    .aboutSection #content {
+        max-width: 90%;
+        padding-top: 0.4rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .aboutSection #heading {
+        font-size: 3rem;
+        padding-left: 4%;
+    }
+    .aboutSection {
+        margin-top: 1rem;
     }
 }
 
@@ -239,13 +285,14 @@ header #mainNav #navbarBrand i {
     font-size: 1.3rem;
 }
 
-#serviceCardHidden a{
+#serviceCardHidden a {
     color: black;
 }
 
-#serviceCardHidden a:hover{
+#serviceCardHidden a:hover {
     color: red;
 }
+
 
 /* GALLERY SECTION STYLES */
 
@@ -306,7 +353,7 @@ header #mainNav #navbarBrand i {
 
 .appointment #submit-btn {
     background-color: transparent;
-    border: 2.5px solid rgb(250, 74, 103);
+    border: 2px solid rgb(250, 74, 103);
     box-shadow: none;
     color: rgb(250, 74, 103);
     border-radius: 0;
@@ -316,10 +363,13 @@ header #mainNav #navbarBrand i {
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 2px;
+    transition: all 0.8s ease-out;
+    height: 60px;
 }
 
 .appointment #submit-btn:hover {
-    background-color: rgb(251, 175, 188);
+    background-color: rgb(250, 74, 103);
+    border: 2px solid rgb(250, 74, 103);
     border: none;
     color: rgb(56, 56, 56);
     box-shadow: 2px 1px 1px rgba(88, 88, 88, 0.472);
