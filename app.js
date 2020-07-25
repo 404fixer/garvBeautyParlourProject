@@ -160,5 +160,5 @@ app.get('/service6', (req, res) => {
 
 app.listen('3000' || process.env.PORT, () => {
     console.log('SERVER HAS STARTED')
-    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+    // console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 })
