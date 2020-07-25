@@ -158,6 +158,6 @@ app.get('/service6', (req, res) => {
     res.render('servicesRoutes/service6')
 })
 
-app.listen('3000', () => {
+app.listen('3000' || process.env.PORT, () => {
     console.log('SERVER HAS STARTED')
 })
