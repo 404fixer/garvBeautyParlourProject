@@ -1,0 +1,481 @@
+body,
+html {
+    font-family: 'Nunito Sans', sans-serif;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+header {
+    z-index: 1;
+}
+
+#mainNav {
+    background-color: rgba(0, 0, 0, 0.719);
+    min-height: 150px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 55%, 0 100%);
+    padding-bottom: 2.5rem;
+}
+
+header #mainNav #navbarBrand {
+    color: rgb(251, 175, 188);
+    font-weight: 200;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400;
+    font-size: 2.5rem;
+    transition: all 0.5s ease;
+}
+
+header #mainNav #navbarBrand i {
+    font-size: 4rem;
+    margin-top: 1.6rem;
+}
+
+#mainNav #navBody .nav-link {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 200;
+    height: 100%;
+    transition: all 0.5s ease;
+    margin-right: 0.8rem;
+}
+
+#mainNav #navBody .nav-link:hover {
+    border: 1.5px solid rgb(250, 74, 103);
+    color: rgb(250, 74, 103);
+}
+
+#mainNav #navbarBrand:hover {
+    color: rgb(250, 74, 103);
+}
+
+#togglerBtn {
+    color: rgba(255, 255, 255, 0.815);
+    font-size: 2rem;
+    outline: none;
+}
+
+@media (max-width: 576px) {
+    #mainNav {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 35% 80%, 0 100%);
+        padding-bottom: 3rem;
+    }
+    #mainNav ul li {
+        padding-left: 60%;
+    }
+    #mainNav #navbarBrand {
+        margin-left: 1rem !important;
+    }
+    #mainNav #navBody .nav-link:hover {
+        border: none;
+        color: rgb(250, 74, 103);
+    }
+}
+
+@media (max-width: 360px) {
+    #mainNav {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 35% 85%, 0 100%);
+        padding-bottom: 2rem;
+    }
+    #mainNav ul li {
+        padding-left: 50%;
+    }
+    #mainNav #navbarBrand {
+        margin-left: 0.7rem !important;
+    }
+}
+
+
+/* Navbar Scrolling Effect */
+
+.nav-area {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    transition: top .6s;
+    overflow: hidden;
+}
+
+.nav-area.animate {
+    top: -158px;
+}
+
+.nav-area.sticky {
+    top: 0;
+}
+
+
+/* carousel styles */
+
+#carouselContainer {
+    padding: 0;
+}
+
+#carouselContainer .carousel-inner .carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+#carouselContainer #carouselBtn {
+    z-index: 0;
+}
+
+#carouselContainer #carouselBtn:hover {
+    background-color: rgba(0, 0, 0, 0.63);
+}
+
+
+/* ABOUT SECTION STYLING */
+
+.aboutSection {
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+
+.aboutSection:hover #heading {
+    transform: rotateY(360deg);
+}
+
+.aboutSection #image-person img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.aboutSection #heading {
+    font-family: 'Cinzel', serif;
+    color: #2B2B2B;
+    font-size: 4rem;
+    transition: all 2s ease;
+}
+
+.aboutSection #aboutCard {
+    background-color: #DADADA;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.aboutSection #cardAbout {
+    text-align: center;
+    padding: 2rem;
+}
+
+.aboutSection #cardAbout:hover,
+.aboutSection #cardAbout:hover #image-person img {
+    -webkit-box-shadow: -2px -2px 8px -1px rgba(36, 36, 36, 0.23);
+    -moz-box-shadow: -2px -2px 8px -1px rgba(36, 36, 36, 0.23);
+    box-shadow: -2px -2px 8px -1px rgba(36, 36, 36, 0.23);
+}
+
+.aboutSection #content {
+    letter-spacing: 0.4px;
+    line-height: 1.6;
+    text-align: justify;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    max-width: 70%;
+    padding-left: 17%;
+    color: #7F7F80;
+}
+
+.aboutSection #personName {
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    margin-bottom: 0;
+    color: #7F7F80;
+}
+
+.aboutSection #personDetail {
+    font-size: 1.1rem;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 2.2rem;
+    color: #3F3F3F;
+}
+
+.aboutSection #designation {
+    margin-top: 0.4rem;
+    font-size: 0.8rem;
+    color: #7F7F80;
+}
+
+@media (max-width: 1000px) {
+    .aboutSection #content {
+        max-width: 90%;
+        padding-top: 0.4rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .aboutSection #heading {
+        font-size: 3rem;
+        padding-left: 4%;
+    }
+    .aboutSection {
+        margin-top: 1rem;
+    }
+}
+
+
+/* SERVICE SECTION STYLES */
+
+.serviceSection {
+    margin-top: 3rem;
+}
+
+#serviceBtn {
+    background-color: rgb(251, 175, 188);
+    border-radius: 0;
+    border: none;
+    color: black;
+    transition: all 0.5s ease;
+}
+
+#serviceBtn:hover {
+    border: 1px solid rgb(250, 74, 103);
+    background-color: transparent;
+    color: rgb(250, 74, 103);
+}
+
+#headingService {
+    text-align: center;
+}
+
+.serviceSection .card-body {
+    text-align: center;
+    background-color: rgba(158, 158, 158, 0.815);
+}
+
+.serviceSection .card {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#serviceCardHidden {
+    background-color: white;
+    padding-bottom: 5rem;
+}
+
+#serviceCardHidden #serviceCardHiddenHeading {
+    text-align: end;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: rgb(143, 142, 142);
+}
+
+#serviceCardHidden #section-1 img {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+#serviceCardHidden hr {
+    margin-bottom: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+#serviceCardHidden #section-2 {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+#serviceCardHidden #section-2 #tableHeading {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+#serviceCardHidden a {
+    color: black;
+}
+
+#serviceCardHidden a:hover {
+    color: red;
+}
+
+
+/* GALLERY SECTION STYLES */
+
+.gallerySection {
+    background-color: rgb(251, 175, 188);
+    margin-top: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+.gallerySection #headings {
+    text-align: center;
+}
+
+.gallerySection #galleryColumns {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+
+.gallerySection img {
+    width: 100%;
+    margin-top: 0.6rem;
+}
+
+.gallerySection #moreBtn {
+    text-align: end;
+    margin-top: 2.5rem;
+    font-size: 2rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.gallerySection #moreBtn a {
+    text-decoration: none;
+    color: #2E4053;
+    transition: all 0.5s ease;
+}
+
+.gallerySection #moreBtn a:hover {
+    color: rgb(250, 74, 103);
+}
+
+
+/* APPOINTMENT SECTION STYLES */
+
+.appointment {
+    margin-top: 3rem;
+}
+
+.appointment #heading {
+    text-align: center;
+}
+
+.submitBtn {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.appointment #submit-btn {
+    background-color: transparent;
+    border: 2px solid rgb(250, 74, 103);
+    box-shadow: none;
+    color: rgb(250, 74, 103);
+    border-radius: 0;
+    font-size: 1.5rem;
+    padding: 0.6rem;
+    width: 10rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+    transition: all 0.8s ease-out;
+    height: 60px;
+}
+
+.appointment #submit-btn:hover {
+    background-color: rgb(250, 74, 103);
+    border: 2px solid rgb(250, 74, 103);
+    border: none;
+    color: rgb(56, 56, 56);
+    box-shadow: 2px 1px 1px rgba(88, 88, 88, 0.472);
+}
+
+
+/* CONTACT US STYLES */
+
+.contactUs {
+    margin-top: 3rem;
+}
+
+.contactUs .headings {
+    text-align: center;
+}
+
+.contactUs #contactCols {
+    margin-top: 1rem;
+}
+
+.contactUs #contactCols:nth-of-type(2) {
+    border-left: 1px solid rgb(177, 177, 177);
+    padding-top: 1rem;
+}
+
+.contactUs #contactCols #googleMap {
+    margin-bottom: 1rem;
+}
+
+.contactUs #contactCols #detailsIcon i {
+    font-size: 4.5rem;
+    color: rgb(56, 56, 56);
+}
+
+.contactUs #contactCols #detailsIcon {
+    padding-right: 0;
+    padding-left: 1.4rem;
+    text-align: center;
+}
+
+.contactUs #contactCols #detailsInfo {
+    margin: auto 0;
+}
+
+.contactUs #contactCols p {
+    margin-bottom: 0.7rem;
+    font-size: 1rem;
+    border-bottom: 1px solid rgb(177, 177, 177);
+}
+
+
+/* FOOTER STYLES HERE */
+
+.footer {
+    background-color: rgb(233, 232, 231);
+    margin-top: 5rem;
+    padding-bottom: 1rem;
+    background: rgba(133, 132, 132, 0.246), url(../images/webb.png);
+}
+
+.footer .footer-copyright a {
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+    transition: all 0.5s ease;
+}
+
+.footer .footer-copyright a:hover {
+    color: rgb(250, 74, 103);
+}
+
+footer .socialMedia {
+    padding-top: 2rem;
+    padding-bottom: 0.1rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer .socialMedia a {
+    background-color: rgb(56, 56, 56);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+
+footer .socialMedia a:hover {
+    background-color: rgb(251, 175, 188);
+    color: rgb(56, 56, 56);
+}
+
+@media (max-width: 800px) {
+    .display-1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .display-1 {
+        font-size: 2.5rem;
+    }
+}
