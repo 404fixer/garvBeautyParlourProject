@@ -159,9 +159,6 @@ app.get('/service5', (req, res) => {
 app.get('/service6', (req, res) => {
     res.render('servicesRoutes/service6')
 })
-app.get('/service_price', (req, res) => {
-    res.render('servicesRoutes/service_price')
-})
 
 app.listen(port, () => {
     console.log('SERVER HAS STARTED ' + port)
